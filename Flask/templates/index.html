@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block singUp %}
+                        <li class="navbar__btn">
+                            <a href="/register" class="button__sign"> Sign Up </a>
+                        </li>
+{% endblock %}
+
+
+{% block login %}
+                        <li class="navbar__item">
+                            <a href="/login" class="navbar__links"> Log In </a>
+                     </li>
+{% endblock %}
+{% block about %}
+<li class="navbar__item">
+                            <a href="/about" class="navbar__links"> About </a>
+                        </li>
+{% endblock %}
+
+
+
+
+{% block main %}
+<!-- main -->
+    <main class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Try now!</h1>
+                <p>Welcome!</p>
+                <button class="main__btn"><a href="/login">Get Started</a></button>
+            </div>
+            <div class="main__img__container">
+                <img src="{{ url_for( 'static', filename='img/undraw_deliveries_-131-a.svg', v=1)}}"
+                alt="pic" id="main__img"/>
+            </div>
+        </div>
+    </main>
+<!-- main -->
+{% endblock %}
